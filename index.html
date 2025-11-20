@@ -14,6 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -26,6 +27,145 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* Additional Elegant Styling */
+        .hero-name {
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 900 !important;
+            color: #ffffff !important;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), 
+                         0px 0px 30px rgba(255, 255, 255, 0.3) !important;
+            letter-spacing: 3px !important;
+        }
+        
+        .btn-white {
+            background: #ffffff !important;
+            color: #0BCEAF !important;
+            font-weight: 600;
+            padding: 12px 30px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-white:hover {
+            background: #f8f9fa !important;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+        }
+        
+        .btn-blue {
+            background: rgba(255, 255, 255, 0.1) !important;
+            color: #ffffff !important;
+            font-weight: 600;
+            padding: 12px 30px;
+            border: 2px solid #ffffff;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-blue:hover {
+            background: rgba(255, 255, 255, 0.2) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Elegant Section Backgrounds */
+        #skill, #responsibility, #contact {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        
+        /* Portfolio Card Shadows */
+        .portfolio-card {
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Improved Badge Styling */
+        .badge {
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .badge-primary {
+            background: linear-gradient(135deg, #0BCEAF 0%, #06A77D 100%);
+        }
+        
+        .badge-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        }
+        
+        .badge-danger {
+            background: linear-gradient(135deg, #dc3545 0%, #e74c3c 100%);
+        }
+        
+        .badge-info {
+            background: linear-gradient(135deg, #17a2b8 0%, #3498db 100%);
+        }
+        
+        .badge-dark {
+            background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+        }
+        
+        /* Enhanced Service Box */
+        .service-box {
+            transition: all 0.3s ease;
+            padding: 2rem;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .service-box:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        /* Enhanced Experience Items */
+        .ex-me {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background: rgba(11, 206, 175, 0.03);
+            margin-bottom: 2rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .ex-me:hover {
+            background: rgba(11, 206, 175, 0.08);
+            transform: translateX(5px);
+        }
+        
+        /* Smooth fade-in for sections */
+        section {
+            animation: sectionFadeIn 0.8s ease-out;
+        }
+        
+        @keyframes sectionFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -62,10 +202,10 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-7 text-center text-lg-left" style="position: relative; z-index: 3;">
-                    <h3 class="text-white font-weight-normal mb-3 animate-fade-in">Hello, I'm</h3>
-                    <h1 class="display-3 text-uppercase mb-2 hero-name" style="-webkit-text-stroke: 3px #ffffff; color: transparent; text-shadow: 3px 3px 0 rgba(0,0,0,0.1);">
+                    <h3 class="text-white font-weight-normal mb-4 animate-fade-in" style="font-size: 1.6rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 300;">Hello, I'm</h3>
+                    <h1 class="display-2 mb-4 hero-name">
                         Daksh Dadhania</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white" style="min-height: 60px;"></h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white" style="min-height: 60px; font-size: 2rem; font-weight: 300;"></h1>
                     <div class="typed-text d-none">DevOps Engineer, Software Developer, Full Stack Developer, Cybersecurity Enthusiast, Cloud Engineer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="https://www.linkedin.com/in/daksh-dadhania-319146137/" target="_blank"
@@ -85,7 +225,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <section class="container-fluid py-5" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
@@ -238,13 +378,14 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Skill End -->
 
 
 
 
     <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <section class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
@@ -363,12 +504,13 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Qualification End -->
 
 
 
     <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
+    <!-- <div class="container-fluid pt-5" id="service">
         <div class="container">
             <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Works</h1>
@@ -422,12 +564,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Services End -->
 
 
     <!-- Positions of Responsibility Start -->
-    <div class="container-fluid pt-5 pb-3" id="responsibility">
+    <section class="container-fluid pt-5 pb-3" id="responsibility">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Leadership</h1>
@@ -464,11 +606,12 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Positions of Responsibility End -->
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <section class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
@@ -481,7 +624,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/0BCEAF/ffffff?text=Harsha+Deesigns" alt="Harsha Deesigns">
+                            <img class="img-fluid w-100" src="img/HarshaDeesigns.png" alt="Harsha Deesigns">
                             <div class="portfolio-overlay">
                                 <a href="https://www.harshadeesigns.in/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -507,7 +650,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/06A77D/ffffff?text=Auspira+Overseas" alt="Auspira Overseas">
+                            <img class="img-fluid w-100" src="img/AuspiraOverseas.png" alt="Auspira Overseas">
                             <div class="portfolio-overlay">
                                 <a href="https://auspiraoverseas.in/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -529,27 +672,53 @@
                     </div>
                 </div>
 
-                <!-- LinkedIn Lookup -->
+                <!-- Godrej Reserve Properties -->
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/0077B5/ffffff?text=LinkedIn+Lookup" alt="LinkedIn Lookup">
+                            <img class="img-fluid w-100" src="img/godrejproperties.png" alt="Godrej Reserve Properties">
                             <div class="portfolio-overlay">
-                                <a href="#" class="btn btn-light btn-sm">
-                                    <i class="fas fa-external-link-alt mr-2"></i>View Project
+                                <a href="https://godrej-reserve-properties.vercel.app/" target="_blank" class="btn btn-light btn-sm">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Website
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-card-body p-4">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h4 class="font-weight-bold mb-0">LinkedIn Lookup</h4>
-                                <span class="badge badge-info">Web Tool</span>
+                                <h4 class="font-weight-bold mb-0">Godrej Reserve</h4>
+                                <span class="badge badge-success">Real Estate</span>
                             </div>
-                            <p class="text-muted mb-3">Minimal and elegant frontend for reverse searching LinkedIn profiles using email addresses. Features dark mode, real-time validation, and responsive two-pane layout.</p>
+                            <p class="text-muted mb-3">Godrej Properties' first plotted development website spread across 92.7 acres in Devenahalli, Bangalore. Features forest-themed design, 6 acres of forest experience, and luxury clubhouses with stunning amenities.</p>
                             <div class="portfolio-tech">
-                                <span class="tech-badge">Next.js 15</span>
-                                <span class="tech-badge">TypeScript</span>
-                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PhishTrap -->
+                <div class="col-lg-6 col-md-6 mb-5">
+                    <div class="portfolio-card h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img class="img-fluid w-100" src="img/phishtrap.png" alt="PhishTrap">
+                            <div class="portfolio-overlay">
+                                <a href="https://phishtrap.vercel.app/" target="_blank" class="btn btn-light btn-sm">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Website
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="font-weight-bold mb-0">PhishTrap</h4>
+                                <span class="badge badge-danger">Cybersecurity</span>
+                            </div>
+                            <p class="text-muted mb-3">Smart India Hackathon 2023 Winner - Ultimate phishing detection system with browser extension and application. Features real-time URL analysis, ML-powered detection using Gradient Boosting Classifier, and comprehensive security scanning.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Machine Learning</span>
+                                <span class="tech-badge">Flask</span>
                             </div>
                         </div>
                     </div>
@@ -559,7 +728,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Ecowitty" alt="Ecowitty">
+                            <img class="img-fluid w-100" src="img/eccowitty.png" alt="Ecowitty">
                             <div class="portfolio-overlay">
                                 <a href="https://eccowitty.vercel.app/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -585,7 +754,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/FF6B6B/ffffff?text=Adarsh+Savana" alt="Adarsh Savana">
+                            <img class="img-fluid w-100" src="img/adarshsavana.png" alt="Adarsh Savana">
                             <div class="portfolio-overlay">
                                 <a href="https://adarsh-savana.vercel.app/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -611,7 +780,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/6C5CE7/ffffff?text=DASCII" alt="DASCII">
+                            <img class="img-fluid w-100" src="img/dascii.png" alt="DASCII">
                             <div class="portfolio-overlay">
                                 <a href="https://dascii.vercel.app/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -637,7 +806,7 @@
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="portfolio-card h-100">
                         <div class="portfolio-img-wrapper">
-                            <img class="img-fluid w-100" src="https://via.placeholder.com/600x400/2C3E50/ffffff?text=SAP+INFO" alt="SAP INFO">
+                            <img class="img-fluid w-100" src="img/sapinfo.png" alt="SAP INFO">
                             <div class="portfolio-overlay">
                                 <a href="https://www.sapinfo.co.in/" target="_blank" class="btn btn-light btn-sm">
                                     <i class="fas fa-external-link-alt mr-2"></i>Visit Website
@@ -661,12 +830,13 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Portfolio End -->
 
 
     <!-- Contact Start -->
 
-    <div class="container-fluid py-5" id="contact">
+    <section class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
@@ -704,6 +874,7 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- Contact End -->
 
 
@@ -746,6 +917,10 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919925100763" target="_blank" class="whatsapp-float" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <!-- JavaScript Libraries -->
